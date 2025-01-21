@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script>
+            function Register(){
+                let a= document.forms['form']['name'].value;
+                if(a==""){
+                    alert("Name must be filled out");
+                    return false;
+                }
+            }
+        </script>
+        <form method="post" name="form" action="/login.html"  onsubmit="return Register()">
+        Name <input type="text" name="name"><br>
+        <input type="submit" value="submit">
+        </form>
+    </head>        
+</html>
